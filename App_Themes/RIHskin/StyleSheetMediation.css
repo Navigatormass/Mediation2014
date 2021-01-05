@@ -1,0 +1,182 @@
+﻿
+.requestPanel
+{
+	position: absolute;
+	left: 650px;
+	top: 120px;
+	border-style:groove;
+}
+.errorPanel
+{
+	position: absolute;
+	left: 550px;
+	top: 140px;
+	border-style: none;
+	padding-left: 10px;
+}
+.errorPanel2
+{
+	position: absolute;
+	left: 550px;
+	top: 150px;
+	border-style: groove;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.errorValidate
+{
+	position: absolute;
+	left: 600px;
+	top: 150px;
+	border-style:none;
+}
+/*FOR THE ERROR MESSAGE CSS. USE FOR THE REQUIRED FIELD VALIDATION*/
+.requestPanel2
+{
+	position: absolute;
+	left: 530px;
+	top: 350px;
+	border-style:none;
+}
+.requestPanel3
+{
+	position: absolute;
+	left: 42px;
+	top: 230px;
+	border-style:none;
+}
+.requestPanel4
+{
+	position: absolute;
+	left: 42px;
+	top: 270px;
+	border-style:none;
+}
+.requestPanel5
+{
+	position: absolute;
+	left: 830px;
+	top: 350px;
+	border-style:none;
+}
+.sessionBlue
+{
+	color:#003366;
+	font-size:9pt;
+}
+.sessionGreen
+{
+	color: #006633;
+	font-size: 9pt;
+}
+.sessionRed
+{
+	color: #990000;
+	font-size: 9pt;
+}
+.notePanel
+{
+	left: 550px;
+	position: absolute;
+	top: 200px;
+	border-style:groove;
+	padding:10px;
+	font-size:7pt;
+	background-color:#f1f5f5;
+}
+.buttonFunding
+{
+	background-color: #669966;
+	color: #FFFFFF;
+	font-weight: bold;
+	left: 530px;
+	width: 200px;
+	position: absolute;
+	top: 340px;
+	height: 25px;
+}
+.buttonFunding:Hover
+{
+	background-image:url("ltGRbackground.gif");
+	color:#000000;
+	font-weight:bold;
+}
+.fundingPanel
+{
+	left: 565px;
+	width: 280px;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-left-style: groove;
+	position: absolute;
+	top: 250px;
+	height: 180px;
+	border-bottom-style: groove;
+	padding-left:15px;
+}
+.pnlEditUnits
+{
+	border-style:groove;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-bottom: 5px;
+	padding-right: 2px;
+}
+.subSection
+{
+	font-size:9pt;
+	font-weight:bold;
+	color:#003366;
+}
+.cssLetters
+{
+	color:Red;
+	font-family:@Arial Unicode MS;
+}
+/*Added Aug20-2014
+    CSS for MediationMasterPage css*/
+
+.tab
+{
+    height:30px;
+   
+}
+
+/*Add-Borrower or Mortgagor page css/*/
+.Brpanel{
+
+    width:950px;
+    height:700px;
+}
+.Brlable {
+    width: 150px;
+}
+
+/*Add- Mortgagor case infromation page css*/
+ .cpHeader
+        {
+            color: white;
+            background-image: url(ltGRbackground.gif);
+            font: bold 11px auto "Trebuchet MS", Verdana;
+            font-size: 12px;
+            cursor: pointer;
+            width:99%;
+            height:18px;
+            padding: 1px;
+            margin-top:5px;           
+        }
+  .cpBody
+         {
+            
+          background-image: url(BG.gif) ;
+            font: normal 12px auto Verdana, Arial;
+            border: 1px ;               
+            width:99%;
+            padding: 4px;
+            padding-top: 7px;
+            padding-top: 2px;
+            height:0px;
+           overflow: hidden;
+           border:dashed 2px;
+        }      

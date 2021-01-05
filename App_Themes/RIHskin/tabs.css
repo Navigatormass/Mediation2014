@@ -1,0 +1,100 @@
+﻿/* default layout */
+.ajax__tab_default .ajax__tab_header 
+{
+	white-space:nowrap;
+}
+.ajax__tab_default .ajax__tab_outer 
+{
+	display:inline-block
+}
+.ajax__tab_default .ajax__tab_inner 
+{
+	display:inline-block
+}
+.ajax__tab_default .ajax__tab_tab 
+{
+	margin-right:4px;
+	overflow:hidden;
+	text-align:center;
+	cursor:pointer;
+	display:inline-block;
+}
+
+/* xp theme */
+
+.ajax__tab_header 
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:11px;
+	background:url(ControlImages/tab-line.gif) repeat-x bottom;
+}
+.ajax__tab_outer
+{
+	padding-right:6px;
+	margin-right:0px;
+	background:url("ControlImages/tab-right.gif") no-repeat right;
+}
+.ajax__tab_inner 
+{
+	padding-left:8px;
+	margin-left:0px;
+	background:url("ControlImages/tab-left.gif") no-repeat left;
+}
+.ajax__tab_tab 
+{
+	height:11px;
+	padding:4px;
+	margin:0;
+	background:url("ControlImages/tab.gif") repeat-x;
+	background-color:#003399;
+}
+.ajax__tab_hover .ajax__tab_outer
+{
+	padding-right:6px;
+	margin-right:0px;
+	background:url("ControlImages/tab-hover-right.gif") no-repeat right;
+}
+.ajax__tab_hover .ajax__tab_inner 
+{
+	padding-left:8px;
+	margin-left:0px;
+	background:url("ControlImages/tab-hover-left.gif") no-repeat left;
+}
+.ajax__tab_hover .ajax__tab_tab 
+{
+	padding:4px;
+	height:12px;
+	padding-top:10px;
+	background:url("ControlImages/tab-hover.gif") repeat-x;
+}
+.ajax__tab_active .ajax__tab_outer
+{
+	padding-right:6px;
+	margin-right:0px;
+	background:url("ControlImages/tab-active-right.gif") no-repeat right;
+}
+.ajax__tab_active .ajax__tab_inner
+{
+	padding-left:8px;
+	margin-left:0px;
+	background:url("ControlImages/tab-active-left.gif") no-repeat left;
+}
+.ajax__tab_active .ajax__tab_tab 
+{
+	padding:4px;
+	height:16px;
+	padding-top:10px;
+	background:url("ControlImages/tab-active.gif") repeat-x;
+}
+.ajax__tab_body 
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:8pt;
+	font-weight:bold;
+	border:1px solid #003399;
+	border-top:0;
+	border-bottom:0;
+	background-color:#669966;
+}

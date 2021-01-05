@@ -1,0 +1,33 @@
+
+<%-- GRID VIEW CONTROL SKIN --%>
+<asp:GridView runat="server" BackColor="#FFFFFF" BackImageUrl="ltBLUEbackground.gif" >
+            <PagerSettings FirstPageText="First" LastPageText="Last" Mode="NumericFirstLast" />
+            <FooterStyle BackColor="#003399" ForeColor="#FFFFFF" />
+            <EmptyDataRowStyle BackColor="#FFFFFF" />
+            <RowStyle BackColor="#FFFFFF" BorderColor="#003399" ForeColor="#000000" Height="20" Font-Names="Verdana, Geneva, sans-serif" Font-Size="8pt" HorizontalAlign="Left" BorderWidth="2px" />
+            <EditRowStyle BackColor="#003399" Font-Names="Verdana, Geneva, sans-serif" Font-Size="8pt" ForeColor="#FFFFFF" HorizontalAlign="Left" />
+            <SelectedRowStyle BackColor="#003399" ForeColor="#FFFFFF" HorizontalAlign="Left" Font-Names="Verdana, Geneva, sans-serif" Font-Size="8pt" />
+            <PagerStyle ForeColor="#FFFFFF" HorizontalAlign="Left" />
+            <HeaderStyle ForeColor="#FFFFFF" HorizontalAlign="Left" Wrap="False" />
+            <AlternatingRowStyle BackColor="#CCCCCC" HorizontalAlign="left" />
+</asp:GridView>
+
+
+<%-- DETAIL VIEW CONTROL --%>
+<asp:DetailsView runat="server" CellPadding="2" ForeColor="#000000" GridLines="Both" Height="50px" Width="300px" AutoGenerateRows="False" Visible="False" TabIndex="6" BackImageUrl="ltBLUEbackground.gif" >
+            <FooterStyle BackColor="#999999" ForeColor="#000000" />
+            <EmptyDataRowStyle BackColor="#FFFFFF" />
+            <RowStyle BackColor="#FFFFFF" BorderColor="#FFFFFF" ForeColor="#000000" Height="20" Font-Names="Verdana, Geneva, sans-serif" Font-Size="8pt" HorizontalAlign="Left" BorderWidth="2px" />
+            <EditRowStyle BackColor="#999999" ForeColor="#000000" HorizontalAlign="Left" Font-Names="Verdana, Geneva, sans-serif" Font-Size="8pt" />
+            <PagerStyle  BackColor="#669966" ForeColor="#FFFFFF" HorizontalAlign="Left" />
+            <HeaderStyle BackColor="#999999" ForeColor="#000000" HorizontalAlign="Left" Wrap="False" />
+            <AlternatingRowStyle BackColor="#CCCCCC" HorizontalAlign="left" />
+            <CommandRowStyle BackColor="#336699" ForeColor="#000000" />
+            <FieldHeaderStyle BackColor="#999999" ForeColor="#FFFFFF" HorizontalAlign="Left" Wrap="False" />
+</asp:DetailsView>
+
+<%-- FORM CONTROLS FOR FONT STYLES SIZE AND NAMES --%>
+
+<asp:DropDownList runat="server" CssClass="editText" />
+<asp:RadioButtonList runat="server" CssClass="editText" />
+<asp:TextBox runat="server" CssClass="editText" />

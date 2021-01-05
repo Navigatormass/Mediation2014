@@ -1,0 +1,51 @@
+﻿.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: #FFFFFF;
+    background-color: #669966;
+	font-family:Verdana, Arial;
+	font-size: 11px;
+	font-weight: bold;
+    padding-top: 2px;
+    padding-bottom:4px;
+    padding-left:10px;
+    padding-right:5px;
+    margin-top: 5px;
+    margin-bottom:0px;
+    cursor: pointer;
+}
+.accordionHeader:Hover
+{
+	background-image:url(ltGRbackground.gif);
+}
+.accordionContent
+{
+	background-image:url("BG.gif");
+    border: 1px dashed #003399;
+    border-top: none;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left:20px;
+    padding-bottom: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.accordionLink
+{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.accordionLink:Hover
+{
+	color:#000000;
+	font-weight:bold;
+}
+.insidePanel
+{
+	left: 450px;
+	width: 400px;
+	position: absolute;
+	top: 200px;
+	height: 200px;
+}

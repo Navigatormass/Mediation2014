@@ -1,0 +1,202 @@
+﻿.RIHCalendar .ajax__calendar_container 
+{
+	padding:4px;
+	position:absolute;
+	cursor:default;
+	width:170px;
+	font-size:11px;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.RIHCalendar .ajax__calendar_body 
+{
+	height:139px;
+	width:170px;
+	position:relative;
+	overflow:hidden;
+	margin:auto;
+}
+.RIHCalendar .ajax__calendar_days .ajax__calendar_months .ajax__calendar_years 
+{
+	top:0px;
+	left:0px;
+	height:139px;
+	width:170px;
+	position:absolute;
+	text-align:center;
+	margin:auto;
+}
+.RIHCalendar .ajax__calendar_container TABLE 
+{
+	font-size:11px;
+}
+.RIHCalendar .ajax__calendar_header 
+{
+	height:20px;
+	width:100%;
+}
+.RIHCalendar .ajax__calendar_prev 
+{
+	cursor:pointer;
+	width:15px;
+	height:15px;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.RIHCalendar .ajax__calendar_next 
+{
+	cursor:pointer;
+	width:15px;
+	height:15px;
+	float:right;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.RIHCalendar .ajax__calendar_title 
+{
+	color:#003399;
+	cursor:pointer;
+	font-weight:bold;
+}
+.RIHCalendar .ajax__calendar_footer 
+{
+	height:15px;
+}
+.RIHCalendar .ajax__calendar_today 
+{
+	color:#003399;
+	text-decoration:underline;
+	cursor:pointer;
+	padding-top:3px;
+}
+.RIHCalendar .ajax__calendar_dayname 
+{
+	height:17px;
+	width:17px;
+	text-align:right;
+	padding:0 2px;
+}
+.RIHCalendar .ajax__calendar_day 
+{
+	height:17px;
+	width:18px;
+	text-align:right;
+	padding:0 2px;
+	cursor:pointer;
+}
+.RIHCalendar .ajax__calendar_month 
+{
+	height:44px;
+	width:40px;
+	text-align:center;
+	cursor:pointer;
+	overflow:hidden;
+}
+.RIHCalendar .ajax__calendar_year 
+{
+	height:44px;
+	width:40px;
+	text-align:center;
+	cursor:pointer;
+	overflow:hidden;
+}
+.RIHCalendar .ajax__calendar_container 
+{
+	border:1px solid #003399;
+	background-color:#ffffff;
+	color:#000000;
+}
+.RIHCalendar .ajax__calendar_footer 
+{
+	border-top:1px solid #8ba4cc;
+}
+.RIHCalendar .ajax__calendar_dayname 
+{
+	border-bottom:1px solid #ffffff;
+}
+.RIHCalendar .ajax__calendar_day 
+{
+	border:1px solid #ffffff;
+}
+.RIHCalendar .ajax__calendar_month 
+{
+	border:1px solid #ffffff;
+}
+.RIHCalendar .ajax__calendar_year 
+{
+	border:1px solid #ffffff;
+}
+
+.RIHCalendar .ajax__calendar_active .ajax__calendar_day 
+{
+	background-color:#003399;
+	border-color:#003399;
+	color:#ffffff;
+}
+.RIHCalendar .ajax__calendar_active .ajax__calendar_month 
+{
+	background-color:#003399;
+	border-color:#003399;
+	color:#ffffff;
+}
+.RIHCalendar .ajax__calendar_active .ajax__calendar_year 
+{
+	background-color:#003399;
+	border-color:#003399;
+	color:#ffffff;
+}
+
+.RIHCalendar .ajax__calendar_other .ajax__calendar_day 
+{
+	background-color:#ffffff;
+	border-color:#ffffff;
+	color:#000000;
+}
+.RIHCalendar .ajax__calendar_other .ajax__calendar_year 
+{
+	background-color:#ffffff;
+	border-color:#ffffff;
+	color:#000000;
+}
+.RIHCalendar .ajax__calendar_day 
+{
+	background-color:#003399;
+	border-color:#ffffff;
+	color:#ffffff;
+}
+.RIHCalendar .ajax__calendar_hover .ajax__calendar_day 
+{
+	background-color:#CCCCCC;
+	border-color:#ffffff;
+	color:#003399;
+}
+.RIHCalendar .ajax__calendar_month 
+{
+	background-color:#ffffff;
+	border-color:#ffffff;
+	font-weight:bold;
+	color:#003399;
+}
+.RIHCalendar .ajax__calendar_hover .ajax__calendar_month
+{
+	background-color:#CCCCCC;
+	border-color:#ffffff;
+	color:#003399;
+}
+.RIHCalendar .ajax__calendar_hover .ajax__calendar_year 
+{
+	background-color:#CCCCCC;
+	border-color:#ffffff;
+	color:#003399;
+}
+.RIHCalendar .ajax__calendar_hover .ajax__calendar_title 
+{
+	background-color:#CCCCCC;
+	color:#003399;
+}
+.RIHCalendar .ajax__calendar_hover .ajax__calendar_today 
+{
+	background-color:#CCCCCC;
+	color:#003399;
+}

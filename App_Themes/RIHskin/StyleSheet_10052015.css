@@ -1,0 +1,384 @@
+﻿body 
+{
+	background-color:#FFFFFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+}
+.content
+{
+	border:10px;
+	border:1px solid #003399;
+	border-top:0;
+	padding-bottom:20px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;	
+	background-image:url("BG.gif");
+}
+a
+{
+	color:#003399;
+	font-weight:bold;
+}
+a:Hover
+{
+	color:#9999CC;
+	font-weight:bold;
+}
+.buttonGF
+{
+	background-color:#003399;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:12pt;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.button
+{
+	background-color:#003399;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:8pt;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.button:Hover
+{
+	background-image:url("ltGRbackground.gif");
+	color:#000000;
+	font-weight:bold;
+}
+.buttonSave
+{
+	background-color:#990000;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:8pt;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.buttonSave:Hover
+{
+	background-color:#ff6666;
+	color:#000000;
+	font-weight:bold;
+}
+
+div.center
+{
+	text-align:center;	
+}
+.error
+{
+	font-size:10pt;
+	font-weight:bold;
+	color:#C00000;
+	vertical-align:middle;
+  
+
+}	
+.error2
+{
+	font-size:10pt;
+	color:#C00000;
+	vertical-align:middle;
+}	
+.navTable
+{
+	background-color:#669966;
+	color:#FFFFFF;
+	font-size:10pt;
+	height:25px;
+	width:100%;
+}
+.navTable2
+{
+	background-color:#669966;
+	font-size:10pt;
+	height:25px;
+	width:100%;
+	border-bottom: solid 1px #669966;
+	border-left: solid 1px #003399;
+	border-right: solid 1px #003399;
+	border-top: solid 1px #669966;
+	margin-top:0;
+}
+/*Added by Jaheda 05/04/2015*/
+.navTable3
+{
+	background-color:lightgray;
+	font-size:13pt;
+	height:55px;
+	padding-left:5px;
+	border-bottom: solid 1px #000000;
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
+	border-top: solid 1px #000000;
+	margin-top:0;
+    width:950px;
+    /*margin-left:180px;*/
+    font-family:Verdana, Geneva, sans-serif;
+  
+    
+}
+.navButton
+{
+	color:#FFFFFF;
+	background-color:#669966;
+	border:1px solid #669966;
+}
+/*For the Contacts button color change css*/
+.navButtonclick
+{
+	color:#FFFFFF;
+	background-color:red;
+	border:1px solid #669966;
+}
+
+
+.navButton:Hover
+{
+	background-image: url(ltGRbackground.gif);
+	color: #000000;
+	border:1px solid #006600;
+}
+.navButtonActive
+{
+	background-image:url("ltGRbackground.gif");
+	color:#000000;
+	border:0px;
+	padding:1px;
+}
+
+
+.navLabel
+{
+	color:#FFFFFF;
+	background-color:#669966;
+	border:1px solid #669966;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+	padding:2px 2px 2px 2px;
+}
+/* Added by Jaheda Meman SpecificTaskLable*/
+.stLabel
+{
+	color:#FFFFFF;
+	background-color:#669966;
+	border:1px solid #669966;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+	padding-left:450px;
+}
+.navLableActive
+{
+	background-image:url("ltGRbackground.gif");
+	color:#000000;
+	border:0px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+	padding:2px 2px 2px 2px;
+}
+.navLabel:Hover
+{
+	background-image: url(ltGRbackground.gif);
+	color: #000000;
+	border:1px solid #006600;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+	padding:1px 2px 2px 2px;
+}
+
+
+#header
+{
+	font-size:11pt;
+	color:#003399;
+	font-weight:bold;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:12px;
+}
+.header2
+{
+	font-size:11pt;
+	color:#003399;
+	font-weight:bold;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+   
+}
+/*Added by Jaheda Meman 04/30/2015 for Good-Faith certificate*/
+
+.header3
+{
+	font-size:14pt;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+    background-color:#669966;
+    width:950px;
+    /*margin-left:180px;*/
+}
+.h2
+{
+	font-size:11pt;
+	color:#003399;
+	font-weight:bold;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+    width:900px;
+    margin-left:120px;
+}
+.dt
+ {
+     
+     width:950px;
+     height:40px;
+     border:groove 2px;
+     background-color:#FFFFFF;
+     font-size:11pt;
+     padding-left:10px
+     /*margin-left:180px;*/
+     	
+    
+     }
+/*.dt1
+ {
+     
+     width:890px;
+     height:30px;
+     border:groove 2px;
+     background-color:#FFFFFF;
+     
+     }*/
+.bt {
+    background-color:#003399;
+	color:#FFFFFF;
+	font-size:12pt;
+	font-family:Verdana, Geneva, sans-serif;
+    margin-left:180px;
+    width:150px;
+}
+.form
+{
+	font-size:8pt;
+	color:#000000;
+	padding-left:30px;
+	padding-right:20px;
+	vertical-align:top;
+	height:800px;
+	background-image: url(BG.gif) radial-gradient();
+}
+#Mediationform
+{
+	font-size:8pt;
+	color:#000000;
+	padding-left:30px;
+	padding-right:20px;
+	vertical-align:top;
+	height:1000px;
+	background-image: url(BG.gif) radial-gradient();
+}			
+ul.homeListings
+{
+	border:20px;
+	line-height:25px;
+	margin-top:20px;
+	min-height:150px;
+	min-width:500px;
+	max-width:820px;
+	padding-right:20px;
+}
+span.homeListTitles
+{
+	font-size:9pt;
+	color:#003399;
+}
+div.copy
+{
+	font-size:7pt;
+	color:#003399;
+}	
+hr
+{
+	color:#003399;
+}
+.MaskedEditError
+{
+	background-color:#669966;
+}
+.MaskedEditFocus
+{
+	background-color:#ffffff;
+}
+.lable
+{
+	text-align:left;
+	vertical-align:top;
+	margin-top:10px;
+}
+.break
+{
+	white-space:normal;
+}
+.editText
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:8pt;
+}
+.valign
+{
+	vertical-align:middle;
+}
+.logo
+{
+	left: 74%;
+	position: relative;
+	top: 15px;
+}
+.txtNumber
+{
+	text-align:right;
+}
+.popupControl {
+	background-color:#AAD4FF;
+	position:absolute;
+	visibility:hidden;
+	border-style:solid;
+	border-color: Black;
+	border-width: 2px;
+}
+
+.modalBackground {
+	background-color:White;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+.TestText
+{
+	font-size:16pt;
+	font-family:Times New Roman;
+	font-weight:bolder;
+	color:#C00000;
+	text-align:center;
+}
+	
+.cp
+{
+	text-align:center;	
+}
+#img {
+    grid-column-align: center;
+}
