@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SpecificTaskMasterPage.master.cs" Inherits="SpecificTask_SpecificTaskMasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Mediation Application</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" href="App_Themes/RIHskin/StyleSheetMediation.css" type="text/css" />
+    <link rel="Stylesheet" href="App_Themes/RIHskin/StyleSheet.css" type="text/css" />
+      <link rel="Stylesheet" href="App_Themes/RIHskin/tabs.css" type="text/css" />
+      <link rel="Stylesheet" href="App_Themes/RIHskin/Calender.css" type="text/css" />
+
+    <script type="text/javascript" language="javascript">
+        function goHome() {
+
+            window.location.href("../Home/Default.aspx");
+        }
+        function goAddMortgagor() {
+            window.location.href("../AddMortgagor/Default.aspx");
+        }
+
+        function goAddMediationCaseInformation() {
+            window.location.href("../AddMediationCaseInformation/Default.aspx");
+        }
+        function goSearchMortgagor() {
+            window.location.href("../SearchMortgagor/Default.aspx");
+        }
+        function goSpecificTask() {
+            window.location.href("../SpecificTask/Default.aspx");
+        }
+        function goMaintain() {
+            window.location.href("../MaintainData/Default.aspx");
+        }
+
+        function goReports() {
+            window.location.href("../Reports/Default.aspx");
+        }
+    </script>
+
+    <style type="text/css">
+        .tab {}
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:Label ID="lblTESTEnv" runat="server" Text="TEST ENVIRONMENT ONLY" CssClass="TestText"
+        Width="900px" Visible="false" />
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="AutoComplete.asmx" />
+        </Services>
+    </asp:ScriptManager>
+        <!---Start Tab -first Navigation-->
+       
+    <asp:TabContainer ID="HomeContainerTab" CssClass="homtab"  runat="server" ActiveTabIndex="0"
+        BackColor="#DDE1E5" BorderColor="#DDE1E5"  Width="800px" >
+        <asp:TabPanel ID="HomeTab" runat="server" OnClientClick="goHome"   >
+            <HeaderTemplate >
+                Home
+            </HeaderTemplate>
+        </asp:TabPanel>
+         <asp:TabPanel ID="SearchMortgagor" runat="server" OnClientClick="goSearchMortgagor"  >
+            <HeaderTemplate>
+               Search Mortgagor&nbsp;
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="AddMortgagorTab" runat="server"  OnClientClick="goAddMortgagor" >
+            <HeaderTemplate>
+                Add Mortgagor
+            </HeaderTemplate>
+        </asp:TabPanel>
+          <asp:TabPanel ID="AddMediationCaseInformationTab" runat="server" OnClientClick="goAddMediationCaseInformation" >
+            <HeaderTemplate>
+              Mediation Case
+            </HeaderTemplate>
+        </asp:TabPanel>
+       
+        <asp:TabPanel ID="AddSpecificTask" runat="server" OnClientClick="goSpecificTask"  >
+            <HeaderTemplate>
+                Specific Task
+            </HeaderTemplate>
+                 
+        </asp:TabPanel>
+       
+        <asp:TabPanel ID="MaintainTab" runat="server" OnClientClick="goMaintain"  >
+            <HeaderTemplate>
+                Maintain Data
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="ReportTab" runat="server" OnClientClick="goReports" ActiveTabIndex="6" >
+            <HeaderTemplate>
+                Reports
+            </HeaderTemplate>
+        </asp:TabPanel>
+    </asp:TabContainer>
+    <table class="navTable2">
+         <tr>
+            <td align="left">
+                <asp:Button ID="btnFristSentLetter" runat="server" Text="Print First Notice Letter" CausesValidation="false" 
+                    UseSubmitBehavior="false" OnClick="btnFristSentLetter_Click" CssClass="navButton"   Style="padding-left:450px; "/> 
+                <br />
+                <asp:Button ID="btnSecondSentLetter" runat="server" Text="Print Second Notice Letter" CausesValidation="false"
+                    UseSubmitBehavior="false" OnClick="btnSecondSentLetter_Click" CssClass="navButton" Style="padding-left:450px; "/> 
+                <br />
+                <asp:Button ID="btnNoResponse" runat="server" Text="Print Non Response Certificate" CausesValidation="false"
+                        UseSubmitBehavior="false" OnClick="btnNoResponse_Click" CssClass="navButton" Style="padding-left:450px; "/> 
+                <br />
+                <asp:Button ID="btnPaymentNotReceived" runat="server" Text="Print Penalty Payment Letter" CausesValidation="false"
+                        UseSubmitBehavior="false" OnClick="btnPaymentNotReceived_Click" CssClass="navButton" Style="padding-left:450px; "/> 
+            </td>
+         </tr>
+    </table>
+   
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>
+    </div>
+          <br /> <br /> <br />
+        <br />
+        <br />
+    <div class="copy">
+        <asp:Label ID="lblCopyRight" runat="server" Text=""></asp:Label>
+    </div>
+    </form>
+</body>
+</html>
