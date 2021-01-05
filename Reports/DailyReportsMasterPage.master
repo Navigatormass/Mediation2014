@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DailyReportsMasterPage.master.cs" Inherits="Mediation2014Reports" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Mediation Application</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" href="App_Themes/RIHskin/StyleSheetMediation.css" type="text/css" />
+    <link rel="Stylesheet" href="App_Themes/RIHskin/StyleSheet.css" type="text/css" />
+      <link rel="Stylesheet" href="App_Themes/RIHskin/tabs.css" type="text/css" />
+      <link rel="Stylesheet" href="App_Themes/RIHskin/Calender.css" type="text/css" />
+
+    <script type="text/javascript" language="javascript">
+        function goHome() {
+
+            window.location.href("../../Home/Default.aspx");
+        }
+        function goAddMortgagor() {
+            window.location.href("../../AddMortgagor/Default.aspx");
+        }
+
+        function goAddMediationCaseInformation() {
+            window.location.href("../../AddMediationCaseInformation/Default.aspx");
+        }
+        function goSearchMortgagor() {
+            window.location.href("../../SearchMortgagor/Default.aspx");
+        }
+        function goSpecificTask() {
+            window.location.href("../../SpecificTask/Default.aspx");
+        }
+        function goMaintain() {
+            window.location.href("../../MaintainData/Default.aspx");
+        }
+
+        function goReports() {
+            window.location.href("../../Reports/Default.aspx");
+        }
+    </script>
+
+    <style type="text/css">
+        .tab {}
+<%--    comment to autofit the report on the page _obd 
+
+        .content
+        {
+            height: 205px;
+        }
+--%>    
+
+        .copy
+        {
+            width: 789px;
+        }
+        #form1
+        {
+            width: 786px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:Label ID="lblTESTEnv" runat="server" Text="TEST ENVIRONMENT ONLY" CssClass="TestText"
+        Width="783px" Visible="False" />
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="AutoComplete.asmx" />
+        </Services>
+    </asp:ScriptManager>
+    <!---Start Tab -first Navigation-->
+    <asp:TabContainer ID="HomeContainerTab" CssClass="tab" runat="server" ActiveTabIndex="4"
+        BackColor="#DDE1E5" BorderColor="#DDE1E5" Width="785px" Height="44px">
+        <asp:TabPanel ID="HomeTab" runat="server" OnClientClick="goHome">
+            <HeaderTemplate>
+                Home
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="SearchMortgagor" runat="server" OnClientClick="goSearchMortgagor">
+            <HeaderTemplate>
+                Search Mortgagor&nbsp;
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="AddMortgagorTab" runat="server" OnClientClick="goAddMortgagor">
+            <HeaderTemplate>
+                Add Mortgagor
+            </HeaderTemplate>
+            <ContentTemplate>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </ContentTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="AddMediationCaseInformationTab" runat="server" OnClientClick="goAddMediationCaseInformation">
+            <HeaderTemplate>
+                Mediation Case
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="AddSpecificTask" runat="server" OnClientClick="goSpecificTask">
+            <HeaderTemplate>
+                Specific Task
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="MaintainTab" runat="server" OnClientClick="goMaintain">
+            <HeaderTemplate>
+                Maintain Data
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <asp:TabPanel ID="ReportTab" runat="server" OnClientClick="goReports" ActiveTabIndex="6">
+            <HeaderTemplate>
+                Reports
+            </HeaderTemplate>
+        </asp:TabPanel>
+        <br />
+        <br />
+    </asp:TabContainer>
+    <br />
+            <div align="center" style="width: 787px; height: 19px">
+                <asp:LinkButton ID="lnkRptHome" runat="server" PostBackUrl= "~/Reports/" 
+                    ForeColor="White">Go Back</asp:LinkButton></div> 
+    <div class="content">
+<%--        <asp:ContentPlaceHolder ID="rptMessage" runat="server">  </asp:ContentPlaceHolder>
+--%>        <asp:ContentPlaceHolder ID="rptContentMaster1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <br />
+    <div class="copy">
+        <asp:Label ID="lblCopyRight" runat="server" Text=""></asp:Label>
+    </div>
+    </form>
+</body>
+</html>
+
